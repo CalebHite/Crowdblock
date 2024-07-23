@@ -4,6 +4,7 @@
 
     let fundraisers = [];
     let fundraiserName = "";
+    let fundraiserAddress = "";
     let selectedFundraiser = "";
     let donationAmount = "";
     let selectedFundraiserId = 0;
@@ -98,6 +99,8 @@
         <section>
             <h2>Create Fundraiser</h2>
             <input bind:value={fundraiserName} placeholder="Fundraiser Name" />
+            <input bind:value={fundraiserAddress} placeholder="Fundraiser Address" />
+            <br>
             <button on:click={handleCreateFundraiser}>Create</button>
         </section>
     { /if}
